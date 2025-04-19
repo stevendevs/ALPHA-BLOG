@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get "pages/home"
   
 
-  resources :articles, only: [:show, :index, :new, :create]
+  resources :articles, only: [:show, :index, :new, :create, :edit, :update, :destroy]
 
 get "dasboard", to: "pages#dasboard"
 

@@ -4,9 +4,10 @@
       <!-- head -->
       <thead>
         <tr>
-          <th></th>
+        <th>Actions</th>
           <th>Title</th>
           <th>Description</th>
+        
         </tr>
       </thead>
       <tbody>
@@ -14,7 +15,15 @@
         <tr class="bg-base-200">
           <th><%= article.id %></th>
           <td><%= article.title %></td>
-          <td><%= article.description %></td>
+          <td><%= article.description %></td>  
+          <td>
+          <%= button_to "Eliminar", article_path(article), 
+              method: :delete, 
+              data: { confirm: "¿Estás seguro?" },
+              form: { data: { turbo: true } }, 
+              class: "text-red-600 hover:underline bg-transparent border-none p-0" %>
+        </td>
+        
         </tr>
         <% end %>
       </tbody>

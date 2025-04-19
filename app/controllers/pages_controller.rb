@@ -10,5 +10,7 @@ class PagesController < ApplicationController
   def dasboard
   end
 
+  
+
 
 end
