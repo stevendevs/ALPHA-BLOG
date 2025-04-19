@@ -1,6 +1,16 @@
 
 <h1 class="font-bold text-4xl " >Articles</h1>
 
-<%= @article.title %>
-<%= @article.description %>
 
+
+<div class="card w-96 bg-base-100 card-xs shadow-sm">
+  <div class="card-body">
+    <h2 class="card-title"><%= @article.title %></h2>
+    <p><%= @article.description %> </p>
+  
+  </div>
+
+</div>
+ <div class="justify-end card-actions">
+<button  class="btn btn-primary">Buy Now</button>
+</div>

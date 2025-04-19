@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-gray-50">
   <head>
     <title><%= content_for(:title) || "Alpha Blog" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -22,7 +22,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-gray-400 h-screen w-full">
+  <body class="bg-gray-50 h-screen w-full overflow-y-auto">
   
       <%= yield %>
   

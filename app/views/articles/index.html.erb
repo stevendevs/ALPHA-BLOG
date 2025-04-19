@@ -1,0 +1,23 @@
+<div class="w-full overflow-x-auto">
+  <div class="min-w-[800px]">
+    <table class="table w-full">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @articles.each do |article| %>
+        <tr class="bg-base-200">
+          <th><%= article.id %></th>
+          <td><%= article.title %></td>
+          <td><%= article.description %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
