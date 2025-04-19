@@ -36,3 +36,37 @@ On development
   </svg>
   <div class="absolute -top-2 -left-2 w-20 h-20 border-4 border-green-500 rounded-full animate-pulse"></div>
 </div>
+
+
+
+
+
+
+<div class="relative w-8 h-8 bg-[#ddeb82] rounded-full flex items-center justify-center">
+  <input type="checkbox" checked="checked" class="checkbox checkbox-sm bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+  <div class="absolute top-0 left- w-8 h-8 border-8 border-[#ddeb82] rounded-full pointer-events-none"></div>
+</div>
+
+
+
+
+
+<div class="relative w-10 h-10 bg-[#ddeb82] rounded-full flex items-center justify-center">
+  <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+  <div class="absolute top-0 left-0 w-10 h-10 border-[8px] border-[#ddeb82] rounded-full pointer-events-none"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative w-12 h-12 bg-[#ddeb82] rounded-full flex items-center justify-center">
+  <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+  <div class="absolute top-0 left-0 w-12 h-12 border-[10px] border-[#ddeb82] rounded-full pointer-events-none"></div>
+</div>

@@ -7,3 +7,17 @@
 @plugin "./daisyui-theme.js"{
   /* custom theme here */
 }
+
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --breakpoint-3xl: 120rem;
+  --color-avocado: #FFCOCB
+ 
+
+}
+
+
+
+
+
