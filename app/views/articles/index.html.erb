@@ -1,0 +1,46 @@
+<%= link_to "New", new_article_path,
+class: "text-white bg-yellow-400 hover:bg-yellow-500  font-bold rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
+
+%>
+
+<% flash.each do |key, message| %>
+  <div class="alert alert-<%= key %> bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded mb-4">
+    <%= message %>
+  </div>
+<% end %>
+<div class="w-full overflow-x-auto">
+  <div class="min-w-[800px]">
+    <table class="table w-full">
+      <!-- head -->
+      <thead>
+        <tr>
+        <th>Actions</th>
+          <th>Title</th>
+          <th>Description</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        <% @articles.each do |article| %>
+        <tr class="bg-base-200">
+          <th><%= article.id %></th>
+          <td><%= article.title %></td>
+          <td><%= article.description %></td>  
+          <td><%= article.user_id %></td>  
+          <td class="flex gap-2">
+          <%= link_to "Show", article_path(article) %>
+          <%= button_to "Eliminar", article_path(article), 
+              method: :delete %>
+                 <%= link_to "Edit", edit_article_path(article) %>
+        </td>
+        
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+
+
+  </div>
+
+  </div>
