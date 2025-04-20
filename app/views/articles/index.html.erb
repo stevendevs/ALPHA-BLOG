@@ -21,12 +21,19 @@ class: "text-white bg-yellow-400 hover:bg-yellow-500  font-bold rounded-full tex
         </tr>
       </thead>
       <tbody>
+
         <% @articles.each do |article| %>
-        <tr class="bg-base-200">
+          <tr class="bg-base-200">
+
           <th><%= article.id %></th>
           <td><%= article.title %></td>
           <td><%= article.description %></td>  
-          <td><%= article.user_id %></td>  
+
+
+          <td><%= article.user.name if article.user %></td>
+
+
+          
           <td class="flex gap-2">
           <%= link_to "Show", article_path(article) %>
           <%= button_to "Eliminar", article_path(article), 
