@@ -70,3 +70,5 @@ On development
   <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
   <div class="absolute top-0 left-0 w-12 h-12 border-[10px] border-[#ddeb82] rounded-full pointer-events-none"></div>
 </div>
+
+next
