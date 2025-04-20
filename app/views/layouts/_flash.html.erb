@@ -1,0 +1,11 @@
+<% if defined?(@article) && @article && @article.errors.any? %>
+  <div class="fixed top-20 right-4">
+    <div role="alert" class="alert alert-error">
+      <ul class="list-disc list-inside mt-2">
+        <% @article.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
