@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-gray-50">
+<html class="">
   <head>
     <title><%= content_for(:title) || "Alpha Blog" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -22,13 +22,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-gray-50 flex flex-cols  justify-center items-center h-screen w-full">
- 
-  <%= render "layouts/flash" %>
- 
-  <%= render "layouts/navbar" %>
+  <body class="min-h-screen bg-gray-100">
+    <%= render "layouts/navbar" %>
+    <%= render "layouts/flash" %>
+    
+    <main class="container mx-auto  py-8 mt-16">
       <%= yield %>
-  
+    </main>
   </body>
 </html>
 

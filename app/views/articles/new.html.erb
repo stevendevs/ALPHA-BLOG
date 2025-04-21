@@ -1,5 +1,7 @@
 <h1 class="font-bold text-4xl my-10">Nuevo artículo</h1>
 
+<%= render "shared/errors", obj: @article %> 
+
 
 <%= form_with model: @article, local: true, data: { turbo: false } do |f| %>
 
