@@ -10,42 +10,8 @@ class: "text-white bg-yellow-400 hover:bg-yellow-500  font-bold rounded-full tex
 <% end %>
 <div class="w-full overflow-x-auto">
   <div class="min-w-[800px]">
-    <table class="table w-full">
-      <!-- head -->
-      <thead>
-        <tr>
-        <th>Actions</th>
-          <th>Title</th>
-          <th>Description</th>
-        
-        </tr>
-      </thead>
-      <tbody>
-
-        <% @articles.each do |article| %>
-          <tr class="bg-base-200">
-
-          <th><%= article.id %></th>
-          <td><%= article.title %></td>
-          <td><%= article.description %></td>  
-
-
-          <td><%= article.user.name if article.user %></td>
-
-
-          
-          <td class="flex gap-2">
-          <%= link_to "Show", article_path(article) %>
-          <%= button_to "Eliminar", article_path(article), 
-              method: :delete %>
-                 <%= link_to "Edit", edit_article_path(article) %>
-        </td>
-        
-        </tr>
-        <% end %>
-      </tbody>
-    </table>
-
+   
+<%= render "article" %>
 
 
   </div>
