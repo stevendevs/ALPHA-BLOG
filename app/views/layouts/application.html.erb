@@ -22,13 +22,19 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-gray-50 flex flex-cols  justify-center items-center h-screen w-full">
+  <body class="bg-gray-50 flex    h-screen w-full">
  
   <%= render "layouts/flash" %>
  
   <%= render "layouts/navbar" %>
-      <%= yield %>
+    
+  <aside class="bg-red-300 h-screen fixed w-2/9 left-0 top-0"></aside>
+
+
   
+
+  <%= yield %>
+
   </body>
 </html>
 

@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:show, :index, :new, :create, :edit, :update, :destroy]
 
-get "dasboard", to: "pages#dasboard"
+get "dashboard", to: "pages#dashboard"
+get "calendar", to: "pages#calendar"
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

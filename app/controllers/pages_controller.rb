@@ -7,10 +7,12 @@ class PagesController < ApplicationController
   def index
   end
   
-  def dasboard
+  def dashboard
   end
 
-  
+  def calendar
+  end
+
 
 
 end
