@@ -1,9 +1,232 @@
-<div class="w-40 h-screen bg-yellow-400" data-controller="dashboard">
- 
-<div class="w-50 h-12 bg-yellow-400" 
-       data-action="click->dashboard#toggleWidth">
-    dashboard
-    </div>
+<div class="bg-lime-300 w-full h-screen flex"> 
+<div class="w-40 h-screen bg-yellow-400 transition-all duration-300" data-controller="dashboard">
+    
+<div class="h-16 bg-blue-400 cursor-pointer flex justify-between items-center px-2" data-action="click->dashboard#toggleWidth">
+  
+  <div>
+    Icono
+  </div>
+  
+  <div class="rotate-90">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+      <path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"/>
+    </svg>
+  </div>
 
+</div>
+
+</div>
+
+<div class="w-full h-screen bg-white relative">
+
+<div class="w-full h-16 bg-green-300">
+<%= render "layouts/navbar" %>
+</div>
+<div class="flex w-full bg-lime-300 h-screen ">
+
+<div class="bg-lime-600  w-full flex flex-cols justify-center p-4 ">
+
+<ul class="list bg-base-100 rounded-box shadow-md w-full h-90 overflow-y-auto">
+  
+<li class="list-row flex justify-between items-center p-4">
+<div>
+  <div>Dio Lupa</div>
+  <div class="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
+</div>
+
+<div class="relative w-10 h-10 bg-[#ddeb82] rounded-full flex items-center justify-center">
+  <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+  <div class="absolute top-0 left-0 w-10 h-10 border-[8px] border-[#ddeb82] rounded-full pointer-events-none"></div>
+</div>
+</li>
+
+
+<li class="list-row flex justify-between items-center p-4">
+  <div>
+    <div>Dio Lupa</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
+  </div>
+
+  <div class="relative w-10 h-10 bg-[#ddeb82] rounded-full flex items-center justify-center">
+    <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+    <div class="absolute top-0 left-0 w-10 h-10 border-[8px] border-[#ddeb82] rounded-full pointer-events-none"></div>
+  </div>
+</li>
+
+
+
+
+<li class="list-row flex justify-between items-center p-4">
+  <div>
+    <div>Dio Lupa</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
+  </div>
+
+  <div class="relative w-10 h-10 bg-[#ddeb82] rounded-full flex items-center justify-center">
+    <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+    <div class="absolute top-0 left-0 w-10 h-10 border-[8px] border-[#ddeb82] rounded-full pointer-events-none"></div>
+  </div>
+</li>
+
+
+
+
+<li class="list-row flex justify-between items-center p-4">
+  <div>
+    <div>Dio Lupa</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
+  </div>
+
+  <div class="relative w-10 h-10 bg-[#ddeb82] rounded-full flex items-center justify-center">
+    <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+    <div class="absolute top-0 left-0 w-10 h-10 border-[8px] border-[#ddeb82] rounded-full pointer-events-none"></div>
+  </div>
+</li>
+
+
+
+
+
+<li class="list-row flex justify-between items-center p-4">
+  <div>
+    <div>Dio Lupa</div>
+    <div class="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
+  </div>
+
+  <div class="relative w-10 h-10 bg-[#ddeb82] rounded-full flex items-center justify-center">
+    <input type="checkbox" checked class="checkbox checkbox-xl bg-[#ddeb82] appearance-none focus:outline-none hover:cursor-pointer border-none" />
+    <div class="absolute top-0 left-0 w-10 h-10 border-[8px] border-[#ddeb82] rounded-full pointer-events-none"></div>
+  </div>
+</li>
+
+
+
+
+
+
+<li>
+<div role="status" class="bg-white rounded-lg shadow-md p-4 space-y-6 divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-800">
+<div class="flex items-center justify-between">
+  <div>
+    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+    <div class="w-80 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+  </div>
+  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-10"></div>
+</div>
+</li>
+
+<li>
+<div role="status" class="bg-white rounded-lg shadow-md p-4 space-y-6 divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-800">
+<div class="flex items-center justify-between">
+  <div>
+    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+    <div class="w-80 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+  </div>
+  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-10"></div>
+</div>
+</li>
+
+
+<li>
+<div role="status" class="bg-white rounded-lg shadow-md p-4 space-y-6 divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-800">
+<div class="flex items-center justify-between">
+  <div>
+    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+    <div class="w-80 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+  </div>
+  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-10"></div>
+</div>
+</li>
+<li>
+<div role="status" class="bg-white rounded-lg shadow-md p-4 space-y-6 divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-800">
+<div class="flex items-center justify-between">
+  <div>
+    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+    <div class="w-80 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+  </div>
+  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-10"></div>
+</div>
+</li>
+
+<li>
+<div role="status" class="bg-white rounded-lg shadow-md p-4 space-y-6 divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-800">
+<div class="flex items-center justify-between">
+  <div>
+    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+    <div class="w-80 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+  </div>
+  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-10"></div>
+</div>
+</li>
+<li>
+<div role="status" class="bg-white rounded-lg shadow-md p-4 space-y-6 divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-800">
+<div class="flex items-center justify-between">
+  <div>
+    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+    <div class="w-80 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+  </div>
+  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-10"></div>
+</div>
+</li>
+
+</ul>
+
+</div >
+<div class="bg-lime-100 w-full flex justify-center items-center">
+
+<div class="mt-12">
+  <div role="status" class="bg-white rounded-lg shadow-md p-6 space-y-6 divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-800">
+    <div class="flex items-center justify-between">
+      <div>
+        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+      </div>
+      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+    </div>
+    
+    <div class="flex items-center justify-between pt-4">
+      <div>
+        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+      </div>
+      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+    </div>
+    
+    <div class="flex items-center justify-between pt-4">
+      <div>
+        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+      </div>
+      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+    </div>
+    
+    <div class="flex items-center justify-between pt-4">
+      <div>
+        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+      </div>
+      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+    </div>
+    
+    <div class="flex items-center justify-between pt-4">
+      <div>
+        <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+        <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+      </div>
+      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+    </div>
+    
+    <span class="sr-only">Cargando...</span>
+  </div>
+</div>
+
+
+
+</div >
+
+</div>
+
+
+</div>
 
 </div>

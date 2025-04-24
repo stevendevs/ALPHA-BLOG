@@ -1,35 +1,41 @@
-<table class="table w-full">
-<!-- head -->
-<thead>
-  <tr>
-  <th>Actions</th>
-    <th>Title</th>
-    <th>Description</th>
+
+<div class="bg-yellow-200 w-[%90]"> 
+
+
+
+
+
+<% @articles.each do |article| %>
+
+  <div class="bg-white rounded-lg shadow-md  max-w-sm w-min-90 my-2">
+     
+  <div class="p-4">
+      <div class="flex justify-between items-start mb-2">
+          <div>
+              <h2 class="text-xl font-semibold text-gray-800 mb-1"><%= article.title %></h2>
+              <p class="text-sm text-gray-600"><%= article.user.name if article.user %></p>
+          </div>
+      </div>
+          
   
-  </tr>
-</thead>
-<tbody>
-
-  <% @articles.each do |article| %>
-    <tr class="bg-base-200">
-
-    <th><%= article.id %></th>
-    <td><%= article.title %></td>
-    <td><%= article.description %></td>  
-
-
-    <td><%= article.user.name if article.user %></td>
-
-
     
-    <td class="flex gap-2">
-    <%= link_to "Show", article_path(article) %>
-    <%= button_to "Eliminar", article_path(article), 
-        method: :delete %>
-           <%= link_to "Edit", edit_article_path(article) %>
-  </td>
-  
-  </tr>
-  <% end %>
-</tbody>
-</table>
+      <div class="flex space-x-2">
+
+
+      <%= link_to "Show", article_path(article), class:"py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:text-neutral-400 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" %>
+      <%= button_to "Eliminar", article_path(article), 
+          method: :delete, class:"py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-red-500 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" %>
+             <%= link_to "Edit", edit_article_path(article), class:"py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-teal-500 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" %>
+
+
+      </div>
+      
+      
+      </div>    
+      </div>  
+      </div>  
+      <% end %> 
+
+
+
+</div>

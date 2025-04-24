@@ -22,13 +22,18 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="min-h-screen bg-gray-100">
-    <%= render "layouts/navbar" %>
-    <%= render "layouts/flash" %>
-    
-    <main class="container mx-auto  py-8 mt-16">
+  <body class="bg-blue-400 ">
+  
+
+  <%= render "layouts/flash" %>
+
+    <main class=" flex w-full bg-green-500 ">
       <%= yield %>
     </main>
   </body>
+
+     
+
+
 </html>
 

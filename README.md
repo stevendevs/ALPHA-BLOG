@@ -127,3 +127,20 @@ next
     </li>
   </ul>
 </div>
+
+
+
+<div class="w-40 h-screen bg-yellow-400" data-controller="dashboard">
+ 
+<div class="w-50 h-12 bg-yellow-400" 
+       data-action="click->dashboard#toggleWidth">
+    dashboard
+    </div>
+
+
+</div>
+https://www.creative-tim.com/twcomponents/component/social-ntwrk
+
+https://www.creative-tim.com/twcomponents/component/responsive-vertical-timeline-2
+
+https://www.creative-tim.com/twcomponents/component/admin
